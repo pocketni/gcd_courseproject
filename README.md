@@ -24,8 +24,3 @@ Cleaning specifications:
       of every variable by subject and activity. A mouthful, but self-explanatory. Code for reading said
       file back into R is provided at the bottom.
       
-      
-Purpose of Each file:
-
-
-
