@@ -3,14 +3,14 @@ according to specifications set out in the JHU "Getting and Cleaning Data" Cours
 
 This directory contains:
 ----
-README.md - This wonderful file that you are reading. Provides an overview of the purpose of each file in
+1. README.md - This wonderful file that you are reading. Provides an overview of the purpose of each file in
                   my github assignment directory.
                   
-run.analysis.R - performs all tasks specified above. Place file in the top level of the UIC HAR Dataset
+2. run.analysis.R - performs all tasks specified above. Place file in the top level of the UIC HAR Dataset
                   directory (you should see "train" and "test" directories). Code is exhaustively (and 
                   pedantically) commented and should be self explanatory.
                   
-CodeBook.md - Codebook explaining the purpose of each variable. 
+3. CodeBook.md - Codebook explaining the purpose of each variable. 
 
 Cleaning specifications:
 ----
