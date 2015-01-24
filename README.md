@@ -1,4 +1,4 @@
-The script and Codebook contained within this directory will assist you in cleaning the UCI HAR Dataset 
+The R script and Codebook contained within this directory will assist you in cleaning the UCI HAR Dataset 
 according to specifications set out in the JHU "Getting and Cleaning Data" Course Project.
 
 Specifications consists of the following:
@@ -14,7 +14,6 @@ Specifications consists of the following:
       
       
 Purpose of Each file:
----------------------
 
 README.md - This wonderful file that you are reading. Provides an overview of the purpose of each file in
                   my github assignment directory.
