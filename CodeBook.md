@@ -46,21 +46,20 @@ ID VARIABLES
 -----
 
 subject.no: Subject Number<br>
-	* Subject numbers range from 1-30<br>
-	* We do not know anything about them except that they were between 19-48 years old
+* Subject numbers range from 1-30<br>
+* We do not know anything about them except that they were between 19-48 years old
 
 activity: Activity Performed<br>
-	These labels indicate which activities the volunteers were performing at the time of measurements.
-	These are labeled with words with no particular order implied. Meaning should be fairly self evident.
-	Data in this variable consist of word labels:<br>
-		* WALKING
-		* WALKING_UPSTAIRS
-		* WALKING_DOWNSTAIRS
-		* SITTING
-		* STANDING
-		* LAYING (actually "lying down")
-		<br><br>
-	They can be easily converted to factors according to the wish of the researcher.
+These labels indicate which activities the volunteers were performing at the time of measurements.<br>
+These are labeled with words with no particular order implied. Meaning should be fairly self evident.<br>
+Data in this variable consist of word labels:<br>
+* WALKING
+* WALKING_UPSTAIRS
+* WALKING_DOWNSTAIRS
+* SITTING
+* STANDING
+* LAYING (actually "lying down")<br><br>
+They can be easily converted to factors according to the wish of the researcher.
 		
 
 NB: Data for all remaining variables are normalized and bounded between [-1, 1]<br>
