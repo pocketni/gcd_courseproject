@@ -195,7 +195,7 @@ time.body.gyrometer.jerkmagnitude.stddev<br>
 FREQUENCY DOMAIN SIGNALS
 -------
 
-Variables with the prefix frequency are time variables (see above) to which Fast Fourier Transform (FFT) have been applied.<br><br>
+* Variables with the prefix frequency are time variables (see above) to which Fast Fourier Transform (FFT) have been applied.<br><br>
 
 frequency.body.accelerometer.mean.X<br>
 	average of the transformed mean linear acceleration of the body on the X axis
