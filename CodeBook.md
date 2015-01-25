@@ -1,4 +1,5 @@
 *CodeBook for the cleaned UCI HAR Dataset*
+----
 
 The dataset for this CodeBook contains the average of the mean and standard deviation measurements 
 of movements captured by volunteers wearing Samsung Galaxy II smartphones.
@@ -9,6 +10,7 @@ Università degli Studi di Genova. Please consult their README for more informat
 original data collection effort.
 
 ----
+
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually.
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
@@ -18,6 +20,7 @@ The features selected for this database come from the accelerometer and gyroscop
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
 Finally, a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). Please see "Frequency Domain Signals" section for more details.
+
 ----
 
 The tidied dataset was cleaned in the following manner:
@@ -33,15 +36,16 @@ contains the mean of every variable by subject and activity. A mouthful, but sel
 Code for reading said file back into R is provided at the bottom.
 
 Please see run_analysis.R in this directory for all pertinent code relating to the above.
+
 -----
 
 ID VARIABLES
 
-1. subject.no: Subject Number
+subject.no: Subject Number
 	Subject numbers range from 1-30
 	We do not know anything about them except that they were between 19-48 years old
 
-2. activity: Activity Performed
+activity: Activity Performed
 	These labels indicate which activities the volunteers were performing at the time of measurements.
 	These are labeled with words with no particular order implied. Meaning should be fairly self evident.
 	Data in this variable consist of word labels:
@@ -54,9 +58,11 @@ ID VARIABLES
 		
 	They can be easily converted to factors according to the wish of the researcher.
 		
--------------		
+-------------	
+
 NB: Data for all remaining variables are normalized and bounded between [-1, 1]
 NB2: All data are *averages* of data from original data set for each subject
+
 -------------
 
 TIME DOMAIN SIGNALS	
@@ -185,6 +191,7 @@ time.body.gyrometer.jerkmagnitude.stddev
 	average of the standard deviation of the angular jerk magnitude of the body
 
 -------
+
 FREQUENCY DOMAIN SIGNALS
 	Variables with the prefix frequency are time variables (see above)
 	to which Fast Fourier Transform (FFT) have been applied.
